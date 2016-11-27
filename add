@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ -z "$1" ] && [ -z "$2" ]; then
+  echo "Usage: $0 <short url> <long url>"
+  exit 0
+fi
+
 echo "$2" > urls/"$1"
 git add urls/"$1"
 git commit -m "Added $1 -> $2"
