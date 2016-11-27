@@ -1,0 +1,23 @@
+language: node_js
+node_js: node
+cache: yarn
+
+env:
+  global:
+    - SSH_KEY="id_rsa"
+    - GIT_NAME="Travis CI"
+    - GIT_EMAIL="mad.gooze@gmail.com"
+    - SOURCE_DIR="out"
+    - DEPLOY_BRANCH="master"
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_cc5d983e2d8d_key -iv $encrypted_cc5d983e2d8d_iv -in id_rsa.enc -out id_rsa -d
+
+test:
+  - true
+
+script:
+  - ./generate.sh
+
+after_script:
+  - npm run gh-pages-travis

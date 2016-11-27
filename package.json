@@ -1,0 +1,16 @@
+{
+  "name": "url",
+  "version": "1.0.0",
+  "description": "URL shortener via GitHub Pages, Travis and Yandex Metrika",
+  "main": "index.js",
+  "repository": "git@github.com:mad-gooze/url.git",
+  "author": "Alexey Gusev <mad.gooze@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages-travis": "^1.0.0",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "scripts": {
+    "gh-pages-travis": "gh-pages-travis"
+  }
+}
