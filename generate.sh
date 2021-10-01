@@ -20,6 +20,6 @@ cd urls
 for short_url in *
 do
     long_url=$(prepare_url "$(< $short_url)")
-    ../node_modules/.bin/pug -O "{\"url\": \"$long_url\", \"metrikaID\": \"$METRIKA_ID\"}" ../index.pug -o ../out/$short_url/
+    ../node_modules/.bin/pug3 -O "{\"url\": \"$long_url\", \"metrikaID\": \"$METRIKA_ID\"}" ../index.pug -o ../out/$short_url/
 done
 
