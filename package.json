@@ -7,7 +7,7 @@
   "author": "Alexey Gusev <mad.gooze@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "gh-pages-travis": "^1.0.0",
+    "gh-pages-travis": "^1.0.4",
     "pug-cli": "^1.0.0-alpha6"
   },
   "scripts": {
