@@ -1,4 +1,4 @@
-#url
+# GitHub URL Shortener
 > Run your own URL Shortener via GitHub Pages, Travis and Yandex Metrika
 
 This projects allows you to run your own URL Shortener like bit.ly of tinyurl.com on your GitHub Pages.
